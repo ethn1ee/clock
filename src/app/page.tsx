@@ -26,7 +26,7 @@ const RootPage = () => {
   if (!time) return null;
 
   return (
-    <main className="relative h-svh w-svw">
+    <main className="relative h-svh w-svw bg-black">
       <Image
         src="/forest-texture.webp"
         alt="forest texture"
@@ -34,7 +34,7 @@ const RootPage = () => {
         className="opacity-50 object-cover pointer-events-none blur-lg"
       />
       <div className="flex flex-col items-center absolute top-1/2 left-1/2 -translate-1/2">
-        <div className="flex gap-2 text-4xl">
+        <div className="flex gap-2 text-6xl">
           {[time.getHours(), time.getMinutes(), time.getSeconds()].map(
             (item, i) => (
               <Fragment key={i}>
