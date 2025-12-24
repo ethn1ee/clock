@@ -8,6 +8,7 @@ import {
   useState,
 } from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const RootPage = () => {
   const [time, setTime] = useState<Date | null>(null);
@@ -26,6 +27,12 @@ const RootPage = () => {
 
   return (
     <main className="relative h-svh w-svw">
+      <Image
+        src="/forest-texture.webp"
+        alt="forest texture"
+        fill
+        className="opacity-10 object-cover -z-10"
+      />
       <div className="flex flex-col items-center absolute top-1/2 left-1/2 -translate-1/2">
         <div className="flex gap-2 text-4xl">
           {[time.getHours(), time.getMinutes(), time.getSeconds()].map(

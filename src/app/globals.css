@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #191724;
+  --color-background: transparent;
   --color-foreground: #e0def4;
   --color-secondary-foreground: #908caa;
   --font-sans: var(--font-geist-sans);
