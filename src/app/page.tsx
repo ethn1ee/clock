@@ -26,7 +26,7 @@ const RootPage = () => {
   if (!time) return null;
 
   return (
-    <main className="relative h-svh w-svw bg-black">
+    <main className="relative h-svh w-svw">
       <Image
         src="/forest-texture.webp"
         alt="forest texture"
